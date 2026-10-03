@@ -1,0 +1,84 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #fff;
+  color: #222;
+  font: 15px/1.6 -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+h1 { font-size: 20px; margin-bottom: 16px; }
+h2 { font-size: 15px; color: #666; margin: 24px 0 8px; font-weight: normal; }
+
+#input-area { display: flex; gap: 8px; align-items: stretch; }
+
+textarea {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+  resize: vertical;
+}
+textarea:focus { outline: none; border-color: #333; }
+
+button {
+  padding: 0 18px;
+  border: 1px solid #333;
+  background: #333;
+  color: #fff;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+button:disabled { opacity: .5; cursor: default; }
+
+.hint {
+  margin-top: 10px;
+  padding: 8px 10px;
+  background: #faf3e0;
+  border: 1px solid #e5d9b8;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.empty { color: #aaa; font-size: 14px; }
+
+.list { list-style: none; }
+
+.list li {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.list .row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 14px;
+}
+.list .company { font-weight: 600; }
+.list .no { color: #888; margin-left: 6px; font-family: ui-monospace, monospace; }
+.list .del {
+  border: none;
+  background: none;
+  color: #bbb;
+  padding: 0 0 0 12px;
+  font-size: 16px;
+  line-height: 1;
+}
+.list .del:hover { color: #c00; }
+
+.list .status { margin-top: 4px; }
+.list .time { color: #999; font-size: 13px; margin-top: 2px; }
+
+#signedList li { color: #777; }
+#signedList .status { color: #999; }

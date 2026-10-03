@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="快递追踪">
+<title>快递追踪</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>快递追踪</h1>
+
+  <section id="input-area">
+    <textarea id="numbers" rows="3" placeholder="粘贴快递单号，一行一个"></textarea>
+    <button id="addBtn" type="button">开始追踪</button>
+  </section>
+
+  <p id="hint" class="hint" hidden></p>
+
+  <section id="tracking">
+    <h2>追踪中</h2>
+    <ul id="trackingList" class="list"></ul>
+    <p id="trackingEmpty" class="empty">还没有追踪中的快递</p>
+  </section>
+
+  <section id="signed">
+    <h2>已签收</h2>
+    <ul id="signedList" class="list"></ul>
+    <p id="signedEmpty" class="empty">暂无</p>
+  </section>
+</main>
+
+<script src="md5.min.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
